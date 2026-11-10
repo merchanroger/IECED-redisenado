@@ -1,22 +1,15 @@
-# IECED — rediseño visual conservador
+# IECED — reconstrucción visual local
+
+Proyecto estático compatible con GitHub Pages. La navegación entre apartados se realiza dentro de `index.html?page=...`; los enlaces del menú no redirigen al dominio oficial.
 
 ## Archivos
-- `index.html`: página principal basada en el HTML original proporcionado.
-- `ieced-redesign.css`: mejoras visuales y responsive sin alterar la estructura informativa.
-- `ieced-interactions.js`: menú móvil, progreso de lectura, volver arriba y animaciones suaves.
-- `Gastroenterólogos Guayaquil - IECED - Carlos Robles, endoscopia_files/`: recursos originales capturados.
-- `index-original.html`: respaldo del HTML original.
+- `index.html`: estructura principal.
+- `styles.css`: estilos responsive.
+- `app.js`: navegación interna y contenido por apartado.
+- `assets/`: imágenes y recursos extraídos del respaldo proporcionado.
 
-## Paleta oficial comprobada
-- Naranja institucional: `#FF6400` (acciones principales y acentos).
-- Turquesa: `#009CB6` (navegación, enlaces y detalles secundarios).
-- Carbón: `#231F20` (textos y superficies oscuras).
-- Blanco y grises claros para fondos y legibilidad.
+## Importante sobre fidelidad del contenido
+El respaldo recibido contiene una captura HTML de la página de inicio y un paquete de recursos, no los HTML de todas las páginas internas. Se ha reconstruido la portada usando los textos e imágenes del respaldo y se han incorporado apartados internos con contenido verificado públicamente cuando estaba disponible. En las secciones cuyo contenido completo no estaba en el respaldo, se indica expresamente que falta la fuente original en lugar de inventar información médica, precios, coberturas o instrucciones.
 
-La paleta se comprobó en el logotipo SVG y en los estilos del HTML original. No se incorpora una identidad cromática nueva.
-
-## Prueba
-Descomprime el ZIP y abre `index.html`, o sube el contenido a un repositorio GitHub Pages. El paquete es independiente y no modifica el hosting oficial.
-
-## Alcance
-Esta entrega rediseña la página principal capturada. Los enlaces a páginas internas siguen dirigiendo al sitio oficial; esas páginas aún requieren sus propias capturas para poder rediseñarlas localmente sin perder contenido.
+## Publicar en GitHub Pages
+Sube el contenido de esta carpeta al repositorio y configura Settings → Pages → Deploy from a branch → `main` → `/ (root)`. No agregues un dominio personalizado para la prueba.
